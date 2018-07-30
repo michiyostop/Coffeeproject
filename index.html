@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head>
+<script src="
+https://aframe.io/releases/0.7.0/aframe.min.js"></script><script src="
+https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
+<body>
+<a-scene altspace="fullspace: true">
+<a-assets>
+<img id="brick" src="textures\brick.jpg">
+<img id="holzv2_03" src="textures\holzv2_03.jpg">
+<img id="coffee" src="textures\coffee.jpg">
+<img id="floormat" src="textures\floormat.png">
+<img id="holzv2_08" src="textures\holzv2_08.jpg">
+<img id="doorfront" src="textures\doorfront.png">
+
+
+</a-assets>
+
+
+ 
+
+<a-entity id="side3 " geometry="primitive: plane; width:10; height:-5; depth:1;" n-mesh-collider=' isTrigger: false; type: environment;' position="10 2.6 0" rotation="0 -270 180" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #brick; repeat: 2 1; offset: 0 0;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="counter " geometry="primitive: box; width:10; height:1; depth:0.5;" n-mesh-collider=' isTrigger: false; type: environment;' position="-5 0.703 2.25" rotation="0 0 0" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #holzv2_03; repeat: 6 1; offset: 0 0;  side: front; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="sidewall " geometry="primitive: plane; width:20; height:-5; depth:1;" n-mesh-collider=' isTrigger: false; type: environment;' position="0 2.6 5" rotation="0 0 0" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #brick; repeat: 4 1; offset: 0 0;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:20; height:10; depth:1;" position="0 5.1 -0.01" rotation="-90 0 0" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #coffee; repeat: 1 1; offset: 1 1;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="doormat " geometry="primitive: plane; width:1.5; height:1; depth:1;" position="0 0.13 -4.4" rotation="-90 -180 0" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #floormat; repeat: 1 1; offset: 0 0;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="side4 " geometry="primitive: plane; width:10; height:-5; depth:1;" n-mesh-collider=' isTrigger: false; type: environment;' position="-10 2.6 0" rotation="0 -270 180" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #brick; repeat: 2 1; offset: 0 0;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="floor " geometry="primitive: plane; width:20; height:10; depth:1;" position="0 0.1 -0.008" rotation="-90 0 0" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #holzv2_08; repeat: 10 1; offset: 1 1;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="sidewall2 " geometry="primitive: plane; width:20; height:-5; depth:1;" n-mesh-collider=' isTrigger: false; type: environment;' position="0 2.6 -5" rotation="0 0 0" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #brick; repeat: 4 1; offset: 0 0;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="doorfront " geometry="primitive: plane; width:1; height:2; depth:1;" position="0 1.25 -4.95" rotation="0 0 0" material="shader: 
+standard; transparent: false; color: #FFFFFF; src: #doorfront; repeat: 1 1; offset: 0 0;  side: double; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+
+
+<a-entity n-object='res: objects/cup' position="-0.437 1.243 2.188" size="0.5 0.5 0.5" rotation="0 0 0" ></a-entity>
+
+</a-scene>
+</body>
+</html>
